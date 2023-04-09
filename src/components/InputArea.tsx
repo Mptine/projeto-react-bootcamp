@@ -6,13 +6,15 @@ type InputAreaProps = {
 
 export function InputArea(props: InputAreaProps) {
   return (
-    <textarea
-      className=" rounded border-double focus:border-red"
-      value={props.value}
-      placeholder={props.placeholder}
-      onChange={(event) => onChange(event.target.value)}
-      rows={3}
-      className=" h-3/5 w-full my-4"
-    />
+    <>
+      <p className=" text-xl font-semibold">{props.placeholder}:</p>
+      <textarea
+        className=" rounded border-double focus:border-red h-3/5 w-full my-4 resize-none"
+        value={props.value}
+        placeholder={props.placeholder}
+        onChange={(event) => onChange(event.target.value)}
+        rows={3}
+      />
+    </>
   );
 }

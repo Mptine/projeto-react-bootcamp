@@ -13,15 +13,20 @@ import {
 import { NoteScroll } from "./components/NoteScroll";
 import { api } from "./api";
 import { NotePadAnim } from "./routes/NotePadAnim";
+import { AppHeader } from "./components/AppHeader";
 
 function App() {
   return (
-    <div>
+    <div className=" w-screen">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/notepads" element={<NotePadAnim />} />
-        </Routes>
+        <AppHeader />
+        <div className="flex">
+          <div className=" w-2/12"></div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/notepads" element={<NotePadAnim />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );

@@ -1,15 +1,24 @@
 import { api } from "../api";
 import { InputField } from "./InputField";
 import { InputArea } from "./InputArea";
+import { useState } from "react";
+
 export function AddNote() {
+  const [title, setTitle] = useState("");
+  const [subtitle, setSubtitle] = useState("");
+  const [text, setText] = useState("");
   return (
     <>
       <div className="flex flex-row gap-6">
-        <InputField placeholder="Title" />
-        <InputField placeholder="Subtitle" />
+        <InputField placeholder="Title" value={title} />
+        <InputField placeholder="Subtitle" value={subtitle} />
       </div>
       <div className="h-96 w-full">
-        <InputArea placeholder="Type your note here." />
+        <InputArea
+          className=" rounded border-double focus:border-red resize-none"
+          placeholder="Type your note here."
+          value={text}
+        />
       </div>
     </>
   );

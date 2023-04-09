@@ -1,6 +1,5 @@
 type MiniButtonProps = {
   onClick: () => void;
-  source: string;
   icon: React.ReactNode;
 };
 
