@@ -17,6 +17,7 @@ export function EditNotepad() {
   const params = useParams();
   const navigate = useNavigate();
   const [form, setForm] = useState(defaultNote);
+
   useEffect(() => {
     api.get(`/notepads/${params.id}`).then((res) =>
       setForm({

@@ -2,14 +2,14 @@ OK Pode vite??? Implementar a estrutura do projeto React.	O aluno iniciou um pro
 OK a estrutura do projeto React.	O aluno separou seu código em pelo menos dez componentes?
 OK Implementar a estrutura do projeto React.	O aluno configurou e utilizou TailwindCSS em seu projeto?
 OK a estrutura do projeto React.	O aluno utilizou carregou um CSS global em seu projeto?
-Utilizar o recurso de hooks do React.	O aluno utilizou pelo menos cinco useState?
-Utilizar o recurso de hooks do React.	O aluno utilizou pelo menos três useEffect?
+ok o recurso de hooks do React.	O aluno utilizou pelo menos cinco useState?
+OK o recurso de hooks do React.	O aluno utilizou pelo menos três useEffect?
 OK o recurso de hooks do React.	O aluno utilizou TailwindCSS  para implementar responsividade?
 OK o recurso de hooks do React.	O aluno utilizou axios ou fetch em seu projeto?
 OK a navegação do site com React Router.	O aluno implementou ao menos três telas diferentes?
 OK a navegação do site com React Router.	O aluno implementou a navegação entre as telas?
 OK a navegação do site com React Router.	O aluno passou propriedades entre as telas através da URL?
-Implementar a navegação do site com React Router.	O aluno implementou os breadcrumbs das páginas?
+OK a navegação do site com React Router.	O aluno implementou os breadcrumbs das páginas?
 OK com eventos em uma aplicação React.	O aluno utilizou ícones ou botões com evento de clique em seu projeto?
 OK com eventos em uma aplicação React.	O aluno implementou uma lista de itens com eventos de toque?
 OK com eventos em uma aplicação React.	O aluno consumiu pelo menos três endpoints JSON em seu projeto?
