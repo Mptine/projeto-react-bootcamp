@@ -7,9 +7,9 @@ type InputAreaProps = {
 export function InputArea(props: InputAreaProps) {
   return (
     <>
-      <p className=" text-xl font-semibold">{props.placeholder}:</p>
+      <p className=" text-xl font-semibold">Note:</p>
       <textarea
-        className=" rounded border-double focus:border-red h-3/5 w-full my-4 resize-none"
+        className=" rounded border-double focus:border-red h-full w-full resize-none bg-[#3e3e42]"
         value={props.value}
         placeholder={props.placeholder}
         onChange={(event) => onChange(event.target.value)}

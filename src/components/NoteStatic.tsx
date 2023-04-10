@@ -14,21 +14,17 @@ type NoteStaticProps = {
 export function NoteStatic(props: NoteStaticProps) {
   return (
     <>
-      <div key={props.id} className="w-11/12">
-        <div className="bg-white text-black p-1 rounded-xl h-28 my-1 border text-xs">
-          <div className="flex float-right items-center drop-shadow-xl">
+      <div
+        key={props.id}
+        className="w-11/12 p-1 h-16 my-1 text-xs hover:shadow-lg-invert border-t border-[#3e3e42]">
+        <div>
+          <div className="flex float-right items-center">
             <MiniButton
               onClick={() => Copy(props.content)}
-              icon={<IoIosCopy className="text-red-400 text-xl" />}
-            />
-            <MiniButton
-              onClick={() => Copy(props.content)}
-              icon={<IoIosClose className="text-red-400 text-5xl" />}
+              icon={<IoIosCopy className="text-[#CF6679] text-xl" />}
             />
           </div>
-          <div>{props.id}</div>
           <h1 className=" text-xl">{props.title}</h1>
-          <h2>{props.subtitle}</h2>
           <p>{props.created_at}</p>
         </div>
       </div>

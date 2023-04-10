@@ -8,7 +8,7 @@ export function NotePadStatic() {
     .get("/notepads")
     .then((res) => {
       const noteArr = res.data;
-      const mapped = noteArr.map((item) => {
+      const mapped = noteArr.slice(0, 4).map((item) => {
         return (
           <NoteStatic
             id={item.id}
@@ -22,8 +22,6 @@ export function NotePadStatic() {
       setNoteData(mapped);
     })
     .catch((err) => console.log(err));
-
-  // const arr = ["one", "two", "three", "four", "five", "six"];
 
   return (
     <>
