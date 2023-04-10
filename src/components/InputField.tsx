@@ -11,7 +11,7 @@ export function InputField(props: InputFieldProps) {
       <input
         className=" rounded border-double focus:border-red h-10 bg-[#3e3e42]"
         value={props.value}
-        onChange={(event) => onChange(event.target.value)}
+        onChange={(event) => props.onChange(event.target.value)}
         type="text"
       />
     </div>

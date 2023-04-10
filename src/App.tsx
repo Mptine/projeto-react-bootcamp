@@ -7,6 +7,8 @@ import { api } from "./api";
 import { NotePadAnim } from "./routes/NotePadAnim";
 import { AppHeader } from "./components/AppHeader";
 import { AppFooter } from "./components/AppFooter";
+import { EditNotepad } from "./components/EditNotepad";
+import { About } from "./routes/About";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <div className=" w-2/12"></div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/notepads" element={<NotePadAnim />} />
+            <Route path="/notepads/:id" element={<NotePadAnim />} />
+            <Route path="/notepads/:id/edit" element={<EditNotepad />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
         <AppFooter />

@@ -17,7 +17,10 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
-    "react-scroll-motion": "^0.3.2"
+    "react-scroll-motion": "^0.3.2",
+    "react-simple-toast": "^1.0.10",
+    "react-simple-toasts": "^3.3.4",
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

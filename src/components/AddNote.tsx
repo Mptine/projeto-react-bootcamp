@@ -13,12 +13,8 @@ export function AddNote() {
         <InputField placeholder="Title" value={title} />
         <InputField placeholder="Subtitle" value={subtitle} />
       </div>
-      <div className="h-96 w-full">
-        <InputArea
-          className=" rounded border-double focus:border-red resize-none"
-          placeholder="Type your note here."
-          value={text}
-        />
+      <div>
+        <InputArea placeholder="Type your note here." value={text} />
       </div>
     </>
   );

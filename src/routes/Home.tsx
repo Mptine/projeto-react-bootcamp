@@ -8,8 +8,7 @@ export function Home() {
         <div>
           <span className="font-bold align-top text-4xl my-4">
             <p className="inline-block">
-              Welcome to CopyBin, this page is a project to my ReactJs class.
-              And I guarantee you this is not a cheap imitation of
+              Welcome to CopyBin, this page is not a cheap imitation of
               <a
                 className="inline-block ml-2 mt-px"
                 href="https://pastebin.com">
@@ -24,6 +23,7 @@ export function Home() {
         </div>
         <div className="flex flex-row h-full">
           <div className=" flex-1 p-4">
+            <p className=" text-2xl font-bold mb-4">New Note:</p>
             <AddNote />
           </div>
           <div className=" w-4/12 right-0 border-l border-[#3e3e42]">
