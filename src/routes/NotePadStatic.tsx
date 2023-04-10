@@ -13,7 +13,7 @@ export function NotePadStatic() {
       .then((res) => {
         const noteArr = res.data;
         const mapped = noteArr
-          .slice(0, 10)
+          .slice(0, 5)
           .map(
             (item: {
               id: number;

@@ -9,17 +9,18 @@ import { AppHeader } from "./components/AppHeader";
 import { AppFooter } from "./components/AppFooter";
 import { EditNotepad } from "./components/EditNotepad";
 import { About } from "./routes/About";
+import { Breadcrumb } from "./components/Breadcrumb";
 
 function App() {
   return (
-    <div className=" w-screen h-screen fixed top-0 bg-[#272728]">
+    <div className=" w-screen h-full bg-[#272728]">
       <BrowserRouter>
         <AppHeader />
-        <div className="flex ">
-          <div className=" w-2/12"></div>
+        <div className="flex h-full">
+          <div className=" w-2/12 h-full"></div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/notepads/:id" element={<NotePadAnim />} />
+            <Route path="/notepads/" element={<NotePadAnim />} />
             <Route path="/notepads/:id/edit" element={<EditNotepad />} />
             <Route path="/about" element={<About />} />
           </Routes>

@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import toast from "react-simple-toasts";
 import { NotePadStatic } from "../routes/NotePadStatic";
+import { Breadcrumb } from "./Breadcrumb";
 
 const defaultNote = {
   title: "",
@@ -30,9 +31,16 @@ export function EditNotepad() {
     setForm(defaultNote);
   }, [params.id]);
 
+  const breadcrumbLinks = [
+    { title: "Home > ", link: "/" },
+    { title: " notepads", link: "/notepads" },
+    { title: `>${params.id}`, link: `/${params.id}` },
+  ];
+
   return (
     <div className=" w-10/12 h-screen text-white bg-[#272728] border-l border-[#3e3e42] p-4 flex">
       <div className="w-10/12">
+        <Breadcrumb links={breadcrumbLinks} />
         <h1 className="text-center text-2xl font-bold my-4">Edit Note:</h1>
         <form
           className="flex flex-col gap-2 mx-2 md:mx-auto md:max-w-screen-md"
@@ -66,7 +74,7 @@ export function EditNotepad() {
           />
           <button
             type="submit"
-            className="bg-red-400 hover:bg-red-500 text-white py-2 px-3 rounded-b-md uppercase font-bold text-sm">
+            className="bg-red-400 hover:bg-red-500 text-white my-10 rounded-b-md uppercase font-bold text-sm">
             Confirm edition
           </button>
         </form>

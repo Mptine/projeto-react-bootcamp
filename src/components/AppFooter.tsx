@@ -5,7 +5,7 @@ import { IoLogoLinkedin } from "react-icons/io";
 
 export function AppFooter() {
   return (
-    <div className=" fixed bottom-0 flex shadow-sm shadow-transparent h-16 items-center justify-center w-screen bg-black">
+    <div className="bottom-0 flex shadow-sm shadow-transparent h-16 items-center justify-center w-screen bg-black">
       <a href="https://github.com/Mptine?tab=repositories">
         <IoLogoGithub className=" text-xl mx-2 text-white text-opacity-50 hover:text-opacity-100" />
       </a>
